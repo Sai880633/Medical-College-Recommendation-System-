@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 30%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #form-container {
+            background-color: #fff;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h2>College Recommendation Form</h2>
+            <form id="recommendationForm" action="Form_Back_conn.php" method="post">
+                <label for="rank">Rank :</label>
+                <input type="number" id="rank" name="rank" oninput="handleinput()">
+                <div class="center-text">
+                    <label for="or">OR</label>
+                </div>
+                <label for="marks">Marks :</label>
+                <input type="number" id="marks" name="marks" oninput="handleinput()">
+                <label for="course">Course :</label>
+                <select name="course" id="course">
+                    <option value="M.B.B.S">M.B.B.S</option>
+                    <option value="B.D.S">B.D.S</option>
+                    <option value="B.A.M.S">B.A.M.S</option>
+                    <option value="B.H.M.S">B.H.M.S</option>
+                </select>
+                <label for="cast">Cast Category :</label>
+                <select name="cast" id="cast">
+                    <option value="OPEN">OPEN</option>
+                    <option value="OBC">OBC</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                    <option value="VJA">VJA</option>
+                    <option value="NTB">NTB</option>
+                    <option value="NTC">NTC</option>
+                    <option value="NTD">NTD</option>
+                    <option value="EWS">EWS</option>
+                    <option value="D1">D1</option>
+                    <option value="D2">D3</option>
+                    <option value="D3">D3</option>
+                    <option value="PH">PH</option>
+                    <option value="MKB">MKB</option>
+                    <option value="NRI">NRI</option>
+
+                </select>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                        <option value="">Select a city...</option>
+                        <option value="AHMEDNAGAR">AHMEDNAGAR</option>
+                        <option value="AKOLA">AKOLA</option>
+                        <option value="ALIBAUG">ALIBAUG</option>
+                        <option value="AMBAJOGAI">AMBAJOGAI</option>
+                        <option value="AMRAVATI">AMRAVATI</option>
+                        <option value="ASHTA SANGLI">ASHTA SANGLI</option>
+                        <option value="AURANGABAD">AURANGABAD</option>
+                        <option value="BARSHI SOLAPUR">BARSHI SOLAPUR</option>
+                        <option value="BEED">BEED</option>
+                        <option value="BHIWANDI">BHIWANDI</option>
+                        <option value="BHILEWADA BHANDARA">BHILEWADA BHANDARA</option>
+                        <option value="BULDHANA">BULDHANA</option>
+                        <option value="CHALISGAON">CHALISGAON</option>
+                        <option value="CHANDRAPUR">CHANDRAPUR</option>
+                        <option value="CHIKHLI BULDHANA">CHIKHLI BULDHANA</option>
+                        <option value="CHINCHWAD">CHINCHWAD</option>
+                        <option value="DHULE">DHULE</option>
+                        <option value="GADHINGLAJ">GADHINGLAJ</option>
+                        <option value="GONDIA">GONDIA</option>
+                        <option value="HATTA HINGOLI">HATTA HINGOLI</option>
+                        <option value="HINGOLI">HINGOLI</option>
+                        <option value="IGATPURI NASIK">IGATPURI NASIK</option>
+                        <option value="ISLAMPUR SANGLI">ISLAMPUR SANGLI</option>
+                        <option value="JALGAON">JALGAON</option>
+                        <option value="JALKE AHMEDNAGAR">JALKE AHMEDNAGAR</option>
+                        <option value="JAMKHED AHMEDNAGAR">JAMKHED AHMEDNAGAR</option>
+                        <option value="JAYSINGPUR">JAYSINGPUR</option>
+                        <option value="JUNNAR PUNE">JUNNAR PUNE</option>
+                        <option value="K.ZAMRE WASHIM">K.ZAMRE WASHIM</option>
+                        <option value="KALE LATUR">KALE LATUR</option>
+                        <option value="KARJAT">KARJAT</option>
+                        <option value="KHAMGAON">KHAMGAON</option>
+                        <option value="KHED RATNAGIRI">KHED RATNAGIRI</option>
+                        <option value="KODOLI KOLHAPUR">KODOLI KOLHAPUR</option>
+                        <option value="KOLHAPUR">KOLHAPUR</option>
+                        <option value="KUDAL SINDHUDURG">KUDAL SINDHUDURG</option>
+                        <option value="LATUR">LATUR</option>
+                        <option value="LOHGAON PUNE">LOHGAON PUNE</option>
+                        <option value="MAJALGAON BEED">MAJALGAON BEED</option>
+                        <option value="MIRAJ">MIRAJ</option>
+                        <option value="MOZRI AMARAVATI">MOZRI AMARAVATI</option>
+                        <option value="MUMBAI">MUMBAI</option>
+                        <option value="NAGPUR">NAGPUR</option>
+                        <option value="NALASOPARA">NALASOPARA</option>
+                        <option value="NANDED">NANDED</option>
+                        <option value="NANDIHILLS">NANDIHILLS</option>
+                        <option value="NASHIK">NASHIK</option>
+                        <option value="NASIK">NASIK</option>
+                        <option value="NAVA MUMBAI">NAVA MUMBAI</option>
+                        <option value="NEW MUMBAI">NEW MUMBAI</option>
+                        <option value="OSMANABAD">OSMANABAD</option>
+                        <option value="PALGHAR">PALGHAR</option>
+                        <option value="PARNER AHMEDNAGAR">PARNER AHMEDNAGAR</option>
+                        <option value="PARBHANI">PARBHANI</option>
+                        <option value="PURNA PARBHANI">PURNA PARBHANI</option>
+                        <option value="PUNE">PUNE</option>
+                        <option value="RAHURI A'NAGAR">RAHURI A'NAGAR</option>
+                        <option value="RATNAGIRI">RATNAGIRI</option>
+                        <option value="REVGAON JALNA">REVGAON JALNA</option>
+                        <option value="RISOD DEGAON WASHIM">RISOD DEGAON WASHIM</option>
+                        <option value="SANGLI">SANGLI</option>
+                        <option value="SAGWAN BULDHANA">SAGWAN BULDHANA</option>
+                        <option value="SEVAGRAM WARDHA">SEVAGRAM WARDHA</option>
+                        <option value="SHIRPUR DHULE">SHIRPUR DHULE</option>
+                        <option value="SHIRPUR-DHULE">SHIRPUR-DHULE</option>
+                        <option value="SINDHUDURG">SINDHUDURG</option>
+                        <option value="SOLAPUR">SOLAPUR</option>
+                        <option value="TALEGAON PUNE">TALEGAON PUNE</option>
+                        <option value="THANE">THANE</option>
+                        <option value="UDAGIR LATUR">UDAGIR LATUR</option>
+                        <option value="VADGAON KOLHAPUR">VADGAON KOLHAPUR</option>
+                        <option value="VAGHOLI PUNE">VAGHOLI PUNE</option>
+                        <option value="VAIJAPUR ABAD">VAIJAPUR ABAD</option>
+                        <option value="VANGANI AMBERNATH">VANGANI AMBERNATH</option>
+                        <option value="VENGURLA">VENGURLA</option>
+                        <option value="WARDHA">WARDHA</option>
+                        <option value="YEOLA NASIK">YEOLA NASIK</option>
+                        <option value="YAVATMAL">YAVATMAL</option>
+                </select>
+        
+                <button type="button" onclick="handleSubmit()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function handleinput() {
+            var a = document.getElementById('rank');
+            var b = document.getElementById('marks');
+            var submitButton = document.querySelector('button[type="submit"]');
+            if (a.value !== "" && b.value !== "") {
+                alert("Please input either Rank or Marks. Do not fill both fields simultaneously.");
+                submitButton.disabled = true;
+            } else {
+                submitButton.disabled = false;
+            }
+        }
+
+        function handleSubmit() {
+            var a = document.getElementById('rank');
+            var b = document.getElementById('marks');
+            var submitButton = document.querySelector('button[type="submit"]');
+            if (a.value === "" && b.value === "") {
+                alert("Please input either Rank or Marks.");
+                submitButton.disabled = true;
+            } else {
+                document.getElementById('recommendationForm').submit();
+            }
+        }
+    </script>
+</body>
+</html>

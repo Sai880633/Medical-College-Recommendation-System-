@@ -1,0 +1,260 @@
+/* Add this to your style.css file or include it within the head of your HTML document */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* .banner {
+    background-image: url(img/BannerImg.jpg);
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 0;
+    padding-top: 0;
+    text-align: center;
+    background-position: center ;
+    background-size: cover;
+    padding-bottom: 140px;
+} */
+/* Add these styles to your existing styles or create a new CSS file */
+
+.banner {
+  background-image: url('img/BannerImg.jpg'); /* Replace with your banner image path */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust the height as needed */
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.banner-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: #ffc107;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 15px;
+}
+
+.banner-heading {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.Abst {
+    margin-top: 20px;
+}
+
+.banner-btn {
+    background-color: #ffc107;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+
+.blog {
+    padding: 50px 0;
+}
+
+.blog-img {
+    background-image: url(img/img2.jpeg);
+    background-size: cover;
+    height: 400px;
+    border-radius: 1rem;
+}
+
+.blog h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+body {
+    padding-top: 56px; /* Adjust this value based on your navbar height */
+  }
+
+  .navbar {
+    background-color: #333;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    color: #fff !important;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      text-align: left;
+    }
+
+    .navbar-nav {
+      margin-top: 10px;
+    }
+  }
+
+footer {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+footer h1 {
+    color: #ffc107;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .blog-img {
+        height: 250px;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* slide  */
+.mySlides {
+    display: none;
+    width: 100%;
+    max-height: 400px;
+    margin: auto;
+    transition: transform 5s ease-in-out;
+  }
+
+  .visible {
+    transform: translateX(0%);
+  }
+
+  .hidden-right {
+    transform: translateX(100%);
+  }
+
+  .hidden-left {
+    transform: translateX(-100%);
+  }
+  .fw-bolder{
+    background-color: rgba(0, 0, 255, 0.116);
+    border-radius: 1rem;
+  }
+
+  /* Table style */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Default styles for larger screens */
+.banner-heading {
+    font-size: 4em;
+    margin-top: 0px;
+}
+
+.Abst {
+    font-size: 1.5em;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .banner-heading {
+        font-size: 3em;
+    }
+
+    .Abst {
+        font-size: 1.2em;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 576px) {
+    .banner-heading {
+        font-size: 2em;
+    }
+
+    .Abst {
+        font-size: 1em;
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */
+
+.text-center{
+  margin-top: 100px;
+}

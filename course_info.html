@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            overflow-y: auto;
+            position: relative; /* Add this to prevent footer overlap */
+            margin-bottom: 60px; /* Adjust margin to accommodate footer height */
+        }
+        .card {
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: 0.25rem;
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .card-body {
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed; /* Set position to fixed */
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure footer is above other content */
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Courses Information</h1>
+    <div class="container mt-5">
+        
+        <div class="card mb-3">
+            <div class="card-header">
+                MBBS
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Bachelor of Medicine, Bachelor of Surgery (MBBS)</h5>
+                <p class="card-text">MBBS is a professional undergraduate degree awarded to students who have completed the study of medicine and surgery in India. The duration of the MBBS course is five and a half years, including a one-year internship program.</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                BAMS
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Bachelor of Ayurvedic Medicine and Surgery (BAMS)</h5>
+                <p class="card-text">BAMS is an undergraduate degree program in Ayurvedic system of medicine. The duration of the BAMS course is five and a half years, including a one-year internship program.</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                BDS
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Bachelor of Dental Surgery (BDS)</h5>
+                <p class="card-text">BDS is a professional undergraduate degree program in dentistry. The duration of the BDS course is four years, followed by one year of internship.</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                BHMS
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Bachelor of Homeopathic Medicine and Surgery (BHMS)</h5>
+                <p class="card-text">BHMS is an undergraduate degree program in the field of Homeopathy. The duration of the BHMS course is five and a half years, including a one-year internship program.</p>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+</html>
